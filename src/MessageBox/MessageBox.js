@@ -6,6 +6,7 @@ import FileMessage from '../FileMessage/FileMessage';
 import SystemMessage from '../SystemMessage/SystemMessage';
 import LocationMessage from '../LocationMessage/LocationMessage';
 import SpotifyMessage from '../SpotifyMessage/SpotifyMessage';
+import YouTubeMessage from '../YouTubeMessage/YouTubeMessage';
 
 import Avatar from '../Avatar/Avatar';
 
@@ -155,6 +156,17 @@ export class MessageBox extends Component {
                                         view={this.props.view}
                                         data={this.props.data}
                                         uri={this.props.uri || this.props.text} />
+                                }
+
+                                {
+                                    this.props.type === 'youTube' &&
+                                    <YouTubeMessage
+                                        width={this.props.width}
+                                        height={this.props.height}
+                                        theme={this.props.theme}
+                                        view={this.props.view}
+                                        data={this.props.data}
+                                        />
                                 }
 
                                 <div
