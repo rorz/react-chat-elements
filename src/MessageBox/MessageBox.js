@@ -174,6 +174,7 @@ export class MessageBox extends Component {
                                         'rce-mbox-time',
                                         { 'rce-mbox-time-block': thatAbsoluteTime },
                                         { 'non-copiable': !this.props.copiableDate },
+                                        { 'video': this.props.type === 'youTube'}
                                     )}
                                     data-text={this.props.copiableDate ? undefined : dateText}>
                                     {

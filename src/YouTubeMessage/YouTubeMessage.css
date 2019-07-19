@@ -73,3 +73,7 @@
     font-size: 70px;
     color: #eaeaea;
 }
+
+.rce-mbox-time.video {
+    position: relative;
+}
